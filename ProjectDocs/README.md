@@ -1,10 +1,4 @@
-The objective of this project is to make an academic search engine for University of Toronto Mississauga’s students and instructors. Users of this search engine should have options to: 
-1.Creating an account 
-2.Uploading .txt, .html and .pdf files 
-3.Searching for the files 
-4.Deleting the files they uploaded before. 
-There should be advanced search options for users such as searching only the files from instructors/students or search for files with specific extension (*.pdf/*.html/*.txt). The results of the search should be prioritized based on the most relevant one. The search engine will provide a preview for each listed file. Each user should have the permission to rate the uploaded files in the system, and also see the average rating for each file in the search results. Users also should have an option to check the history of the files they reviewed before. 
-
+# CSC301 Phase 2
 
 ### Project Planning
 * [Product Backlog] - Contains backlog with time needed for each tasks (/ProjectDocs/pb.txt)

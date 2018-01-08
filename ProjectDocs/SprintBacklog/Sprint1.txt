@@ -1,0 +1,39 @@
+Sprint 1 Backlog
+
+Feb 18 - Feb 29
+
+Product Backlog items to be implemented:
+a) As an instructor/student at University of Toronto Mississauga, I can create an account with my id (sign up) - 12 hrs
+b) As an instructor/student at University of Toronto Mississauga, I can sign in to my account with my id (sign in) - 4 hrs 
+c) As an instructor or a student at University of Toronto Mississauga, I can upload my files in .txt, .html, or .pdf format (Uploading the file) - 12 hrs
+
+Specific tasks to be accomplished:
+a-1. Setting up the server - 3 hrs
+a-2. Setting up the database - 3 hrs
+a-3. HTML/CSS code for the UI part of the signup (client side) - 3 hrs
+a-4. Server side code for signup - 3 hrs
+b-1. HTML/CSS code for the UI part of the sign in (client side) - 2 hrs
+b-2. Server side code for sign in - 2 hrs
+c-1. Server side code for uploading - 4 hrs
+c-2. HTML/CSS code for the UI part of the upload page (client side) - 2 hr
+c-3. Indexing the files - 6 hrs
+
+These tasks are assigned as follows:
+
+User: Daniel
+Tasks: a4, b2
+
+User: Kosar
+Tasks: c2, c1
+
+User: John
+Tasks: c1,c2
+
+User: Kha
+Tasks: b1
+
+User: Khalil
+Tasks: a3
+
+User: All
+Tasks: a-1, a-2, c-3

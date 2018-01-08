@@ -1,0 +1,37 @@
+
+
+user Story ( Sorted by their priorities )
+1--------------------------------------------------------------------------------------------------------------
+Time: 12 hrs
+As an instructor/student at University of Toronto Mississauga, I can create an account with my id (sign up)
+2--------------------------------------------------------------------------------------------------------------
+Time: 4 hrs
+As an instructor/student at University of Toronto Mississauga, I can sign in to my account with my id (sign in)
+3----------------------------------------------------------------------------------------------------------------
+Time: 12 hrs
+As an instructor or a student at University of Toronto Mississauga, I can upload my files in .txt, .html, or .pdf format (Uploading the file)
+4------------------------------------------------------------------------------------------------------------------
+Time: 36 hrs
+As an instructor or a student at University of Toronto Mississauga, I can search for others’ files by their names, the topic of paper or any keywords in the article(search)
+5----------------------------------------------------------------------------------------------------------------------
+Time: 5 hrs
+As an instructor or a student at University of Toronto Mississauga, I can replace my uploaded files with new files in .txt, .htm, or .pdf format so that I can fix errors in my uploaded files. (replace)
+6---------------------------------------------------------------------------------------------------------------------
+Time: 5 hrs
+As an instructor or a student at University of Toronto Mississauga, I can delete my uploaded files so that I can stop everyone from continuously accessing my files when I want to.(delete)
+7------------------------------------------------------------------------------------------------------------------------
+Time: 5 hrs
+As an instructor or a student at University of Toronto Mississauga, I can download any files I found in the system so that I can access them when I am offline. (download)
+8-------------------------------------------------------------------------------------------------------------
+Time: 12 hrs
+As an instructor or a student at University of Toronto Mississauga, I can preview the first part of all files which comes out from my search so that I can get some information before deciding open that file.(preview)
+9-------------------------------------------------------------------------------------------------------------
+Time: 12 hrs
+As an instructor or a student at University of Toronto Mississauga, I can tag a flag to the file so that I can get back to it later. (Tag)
+10----------------------------------------------------------------------------------------------------------------
+Time: 24 hrs
+As an instructor or a student at University of Toronto Mississauga, I can see all files I have accessed for a period of time such as a week, a month, three months, or since the time I created my account so that I can revisit them if I forget to tag it.(History)
+11---------------------------------------------------------------------------------------------------------------------
+Time: 24 hrs
+ As an instructor or a student at University of Toronto Mississauga, I can rate someone’s file (out of 5 stars) or leave comments so that everyone has better clues to decide if they should read it. (rating)
+------------------------------------------------------------------------------------------------------------------------

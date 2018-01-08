@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Group2_Search Search</title>
+		<link rel="stylesheet" href="style.css" type="text/css"> 
+		<link rel="stylesheet" href="Search.css">
+		<script src="jquery-1.12.1.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+        
+        function tagEvent(element) {
+        	var tagPath = element.value;
+        	
+        	$.ajax({
+        		type: "POST",
+        		data:{tagPath: tagPath},
+        		url:"TagFiles",
+        		success: function(result){
+        			
+        		}
+        	
+        	});
+        };
+        
+        $(document).ready(function(){
+        
+	        $('#searchButton').click(function(){
+	        	var searchQuery = $("#searchQuery").val();
+	        	
+	        	$.ajax({
+	        		type: "POST",
+	        		data:{searchQuery: searchQuery},
+	        		url:"Search",
+	        		success: function(result){
+	        			$('#searchRes').html(result);
+	        		}
+	        	
+	        	});
+	        });
+        	
+   		});
+
+        </script>
+        <script src="Search.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id='links'>
+			<a class='links' href='Logout'>Logout</a>
+			<a class='links' href='File.html'>Dashboard</a>
+		</div>
+		<h1>Group 2 Search</h1>
+		<div id="search" align="center">
+			<form name="Search">
+				<input type="text" class="input" id="searchQuery" placeholder="Enter your query here">
+				<input class="button" value="search" type="button" id="searchButton"/>
+			</form>
+		</div>
+		<div id="searchRes">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Upload</display-name>
+  <welcome-file-list>
+    <welcome-file>LoginPage.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>file-upload</param-name>
+
+    <param-value>/home/kosar/Desktop/proj/301grouprepository2/301Project/</param-value>
+
+  </context-param>
+  
+  <servlet>
+   <servlet-name>UploadServlet</servlet-name>
+   <servlet-class>main.UploadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>UploadServlet</servlet-name>
+   <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+   <servlet-name>TagServlet</servlet-name>
+   <servlet-class>main.TagServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>TagServlet</servlet-name>
+   <url-pattern>/TagServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>TagFiles</servlet-name>
+   <servlet-class>main.TagFiles</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>TagFiles</servlet-name>
+   <url-pattern>/TagFiles</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Login</servlet-name>
+   <servlet-class>main.Login</servlet-class>  
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>Login</servlet-name>
+   <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+    <servlet>
+   <servlet-name>Logout</servlet-name>
+   <servlet-class>main.Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>Logout</servlet-name>
+   <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>DownloadServlet</servlet-name>
+   <servlet-class>main.DownloadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>DownloadServlet</servlet-name>
+   <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Signup</servlet-name>
+   <servlet-class>main.Signup</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>Signup</servlet-name>
+   <url-pattern>/Signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Delete</servlet-name>
+   <servlet-class>main.Delete</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>Delete</servlet-name>
+   <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Search</servlet-name>
+   <servlet-class>main.Search</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+   <servlet-name>Search</servlet-name>
+   <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

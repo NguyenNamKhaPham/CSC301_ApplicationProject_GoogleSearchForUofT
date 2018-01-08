@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Layout Demo</title>
+		<link rel="stylesheet" href="style.css" type="text/css"> 
+		<link rel="stylesheet" href="File.css" type="text/css"> 
+		<script src="jquery-1.12.1.js"> </script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				fDelete();
+				tDelete();
+				document.getElementById('custFile').onclick = function(){
+					document.getElementById('selectFile').click();
+				}
+			})
+			
+			//show this first
+			$(function(){
+				
+				$('#fileForm input[type=button][value=Delete]').on('click',function(){
+					fDelete('delete');
+				});
+				$('#taggedForm input[type=button][value=Untag]').on('click',function(){
+					tDelete('delete');
+				});		
+			});
+			
+			
+			//get the selected checked boxes
+			function getSelectedOne()
+			{
+				var selbox = [];
+				var inpfields = document.getElementsByClassName("test");
+				var nr_inpfields = inpfields.length;
+				for (var i = 0 ; i < nr_inpfields ; i++)
+					{
+						if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true)
+							selbox.push(inpfields[i].value);
+					}
+				return selbox;
+			}
+			
+			
+			
+			// For tagged files
+            function fDelete(currentType)
+						  {
+							var selchb = getSelectedOne();
+							//alert(selchb);
+							$.ajax({
+								   url: "Delete",
+								   type: "POST",
+								   data: {
+												check: selchb
+										 },
+								   success: function(response)
+										 {
+									   		$("#putFileResponse").html(response);
+										}
+								  });
+							
+						  }
+			
+			
+			function getUntaggedFiles()
+			{
+				var selbox = [];
+				var inpfields = document.getElementsByClassName("test2");
+				var nr_inpfields = inpfields.length;
+				for (var i = 0 ; i < nr_inpfields ; i++)
+					{
+						if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true)
+							selbox.push(inpfields[i].value);
+					}
+				return selbox;
+			}
+			
+            function tDelete(currentType)
+			  {
+				var selchb = getUntaggedFiles();
+				//alert(selchb);
+				$.ajax({
+					   url: "TagServlet",
+					   type: "POST",
+					   data: {
+									check: selchb
+							 },
+					   success: function(response)
+							 {
+						   		$("#putTaggedResponse").html(response);
+							}
+					  });
+			  }
+
+
+		</script>
+	</head>
+	<body>
+		<h1>Group 2 Search</h1>
+		<div id='links'>
+			<a class='links' href='Logout'>Logout</a>
+			<a class='links' href='Search.html'>Search</a>
+		</div>
+		<section id="fileUI">
+			<header>Files</header>
+			
+			<div class="frame" id="upload">
+				Select file(s) to upload: <br />
+				<form action="UploadServlet" method="post" enctype="multipart/form-data">
+					<input id="selectFile" type="file" name="file" size="50" multiple/>
+					<input class="button" type="button" id="custFile" value="Select File"><br>
+					<br>
+					<input class="button" type="submit" value="Upload" id="submitB"/>
+				</form>
+			</div>
+			
+			<div class="frame" id="delete">
+				<form id="fileForm">
+				Uploaded Files<br/>
+					<div id="putFileResponse"></div>
+					<br>
+					<input class="button" type="button" value="Delete" id="deleteB"/>
+				</form>
+			</div>
+			
+			
+			<div class="frame" id="tagged">
+				<form id="taggedForm">
+				Favourited Files<br/>
+					<div id="putTaggedResponse"></div>
+					<br>
+					<input class="button" type="button" value="Untag" id="untagB"/>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>

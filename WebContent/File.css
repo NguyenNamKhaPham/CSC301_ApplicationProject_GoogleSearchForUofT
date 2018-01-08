@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+/* for commit purposes*/
+
+#upload, #delete, #feed, #tagged{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#selectFile{
+	position: absolute;
+	left: -99999px;
+}
+#upload, #tagged, #delete{
+	margin-bottom: 25px;
+}
+#links{
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	font-size: 20px;
+}
+
+#deleteB, #untagB, #submitB{
+	font-size: 15px;
+}
+
+h1{
+	margin-left: 50px;
+}
+
+header{
+	text-align: center;
+	font-size: 30px;
+}
+
+#custFile{
+	font-family: 'Chelsea Market', cursive;
+	width: 100px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: white;
+	box-shadow: 2px 2px 1px #888888;
+
+}
+
+#custFile:hover{
+	background-color: #e6e6e6;

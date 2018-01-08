@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Group2_Search Login</title>
+		<link rel="stylesheet" href="style.css" type="text/css"> 
+		<link rel="stylesheet" href="LoginPage.css">
+	</head>
+	
+	<body>
+		<div class="frame">
+			<h1>Group 2 Search</h1>
+			<div id="signin" align="center">
+				<form action="Login" method="post">
+					Login as:<br>
+					<input type="radio" name="loginType" value="0">Professor
+					<input type="radio" name="loginType" value="1" checked>Student
+					<br>
+					<br>
+
+					<input class="input" type="text" name="username" placeholder="Username"><br>
+					<input class="input" type="password" name="pass" placeholder="Password"><br>
+					<br>
+					<input class="button" id="login" type="submit" value="Login"/>
+				</form>
+			</div>
+
+			<div id="signup" align="center">
+				Don't have an account?<br>
+				<button class="button" type="button" onclick="window.location.href='SignupPage.html'">Sign Up</button>
+			</div>
+		</div>
+
+	</body>
+</html>

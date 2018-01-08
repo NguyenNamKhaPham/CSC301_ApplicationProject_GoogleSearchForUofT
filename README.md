@@ -23,7 +23,7 @@ There should be advanced search options for users such as searching only the fil
    [Burndown chart]: <https://bitbucket.org/mcs2/301grouprepository2/src/a7f3db7c6042d5e98f291f19a34a1e356136a74d/ProjectDocs/Burn%20Down%20Chart%20Phase%202?at=master&fileviewer=file-view-default>
    [System Design]: <https://bitbucket.org/mcs2/301grouprepository2/src/a7f3db7c6042d5e98f291f19a34a1e356136a74d/ProjectDocs/SystemDesign.pdf?at=master&fileviewer=file-view-default>
 
-###Running the Project
+### Running the Project
 
 * [Resetting the database] - A default is already set. Run MakeDataBase.java as a java application. Clear the uploadFile, preview and index directories in 301Project/ ; delete User.db file.
 * [Running the program] - Simply right click on the project and Run it on server in Eclipse.
